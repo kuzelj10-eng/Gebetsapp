@@ -1,0 +1,9 @@
+{
+  "name": "Salat Lernen",
+  "short_name": "Salat Lernen",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#04100d",
+  "theme_color": "#061713",
+  "icons": []
+}

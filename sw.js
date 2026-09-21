@@ -1,0 +1,1 @@
+const CACHE='salat-lernen-v2';const ASSETS=['./','./index.html','./girl.png','./stehen.jpg','./ruku.jpg','./sitzen.jpg','./sudjud.jpg','./manifest.json'];self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS))));self.addEventListener('fetch',e=>e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request))));

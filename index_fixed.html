@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#071a14">
+<title>Salat Lernen</title>
+<style>
+:root{--bg:#071a14;--panel:#102820;--panel2:#17392c;--gold:#e9c979;--text:#f8f6ee;--muted:#bdcfc3;--line:#315344;--green:#8cdbac;--red:#ffb0a0}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#174331,var(--bg) 65%);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;min-height:100vh}button,input,select{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--gold);outline-offset:3px}.app{max-width:760px;margin:auto;padding:18px 16px 100px}header{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}.brand{display:flex;align-items:center;gap:12px}.logo{width:46px;height:46px;border:1px solid #7c754f;border-radius:15px;display:grid;place-items:center;color:var(--gold);font-size:25px;background:var(--panel)}header h1{font-size:18px;margin:0}header p{font-size:12px;color:var(--muted);margin:3px 0 0}.avatar{border:1px solid var(--line);background:var(--panel2);color:var(--gold);border-radius:50%;width:44px;height:44px;font-size:22px}h2{font-size:clamp(27px,6vw,36px);line-height:1.13;margin:8px 0 12px}h3{font-size:18px;margin:0 0 9px}p{line-height:1.55}.muted{color:var(--muted)}.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:1.5px;font-weight:800;color:var(--gold)}.card{padding:19px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(145deg,#112d23,#0b2119);margin:14px 0;box-shadow:0 12px 28px #0002}.hero{padding:25px 22px;background:linear-gradient(140deg,#1b4934,#0b2119);border-color:#46694d}.hero p{color:#d9e7dc}.btn{border:0;border-radius:13px;background:var(--gold);color:#172219;font-weight:800;padding:13px 17px}.btn.secondary{background:var(--panel2);border:1px solid var(--line);color:var(--text)}.btn.ghost{background:transparent;border:1px solid #58765c;color:var(--gold)}.full{width:100%}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.tile{background:#0d251d;border:1px solid var(--line);border-radius:17px;padding:15px;color:var(--text);text-align:left;min-height:112px}.tile:hover{border-color:var(--gold)}.tile .emoji{font-size:28px;display:block;margin-bottom:8px}.tile strong{display:block}.tile small{display:block;color:var(--muted);margin-top:5px;line-height:1.4}.row{display:flex;gap:10px;align-items:center}.between{justify-content:space-between}.wrap{flex-wrap:wrap}.stat{flex:1;min-width:95px;border:1px solid var(--line);border-radius:15px;background:#0b2119;padding:13px}.stat strong{display:block;color:var(--gold);font-size:22px}.stat small{color:var(--muted)}.progress{height:8px;background:#06140f;border-radius:99px;overflow:hidden;margin:12px 0}.progress span{height:100%;display:block;background:linear-gradient(90deg,#83c99b,var(--gold))}label{display:block;margin:14px 0;color:var(--muted);font-size:14px}input,select{display:block;width:100%;padding:12px;margin-top:6px;border:1px solid var(--line);border-radius:12px;background:#071a14;color:var(--text)}.nav{position:fixed;z-index:5;left:0;right:0;bottom:0;display:flex;justify-content:center;gap:4px;padding:8px 8px calc(8px + env(safe-area-inset-bottom));background:#071a14ee;backdrop-filter:blur(12px);border-top:1px solid var(--line)}.nav button{border:0;background:transparent;color:var(--muted);border-radius:12px;padding:7px 10px;font-size:11px;min-width:55px;display:flex;flex-direction:column;align-items:center;gap:3px}.nav button span{font-size:19px}.nav button.active{color:var(--gold);background:#19392b}.hidden{display:none!important}.back{border:0;background:transparent;color:var(--gold);font-weight:700;padding:7px 0;margin-bottom:10px}.step{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);line-height:1.5}.step:last-child{border:0}.num{width:30px;height:30px;flex:0 0 30px;border-radius:50%;background:#254a37;color:var(--gold);font-weight:800;display:grid;place-items:center}.choice{display:block;width:100%;padding:13px;text-align:left;border:1px solid var(--line);border-radius:13px;background:#0b2119;color:var(--text);margin:9px 0}.choice.correct{background:#173b29;border-color:var(--green)}.choice.wrong{background:#3c241f;border-color:var(--red)}.feedback{padding:13px;border-radius:12px;background:#173b29;margin:12px 0}.feedback.bad{background:#3c241f}.arabic{font-size:28px;line-height:1.8;text-align:center;color:var(--gold);padding:16px 0}.notice{font-size:12px;color:var(--muted);line-height:1.5}hr{border:0;border-top:1px solid var(--line);margin:18px 0}@media(min-width:600px){.app{padding-top:28px}.grid{grid-template-columns:repeat(3,minmax(0,1fr))}.nav{top:0;bottom:auto;left:auto;right:max(calc((100vw - 760px)/2 + 10px),10px);background:transparent;border:0;padding:18px}.nav button{min-width:50px}.app{padding-top:76px}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="app">
+<header><div class="brand"><div class="logo">☾</div><div><h1>Salat Lernen</h1><p>Schritt für Schritt zum Gebet</p></div></div><button class="avatar" id="profileShortcut" aria-label="Profil öffnen">☺</button></header>
+<main id="main" aria-live="polite">
+<section class="hero card"><div class="eyebrow">Willkommen</div><h2>Lerne das Gebet<br>in deinem Tempo.</h2><p>Entdecke die Gebetshaltungen, lerne kurze Bittgebete und sammle Sterne.</p></section>
+<section class="card"><h3>Dein Profil erstellen</h3><p class="muted">Wie dürfen wir dich nennen?</p><label>Dein Name<input id="nameInputFallback" maxlength="30" placeholder="Dein Vorname" autocomplete="given-name"></label><p class="notice">Wenn du diese Vorschau direkt als Datei geöffnet hast, funktionieren interaktive Funktionen möglicherweise nicht. Öffne die veröffentlichte App über ihre Website-Adresse.</p></section>
+<noscript><section class="card"><h3>JavaScript ist deaktiviert</h3><p>Die App braucht JavaScript für Navigation, Profil und Lernfortschritt. Öffne sie über GitHub Pages oder Vercel statt in der Datei-Vorschau.</p></section></noscript>
+</main>
+</div>
+<nav class="nav hidden" id="nav" aria-label="Hauptnavigation">
+<button data-page="home"><span>⌂</span>Start</button><button data-page="learn"><span>📖</span>Lernen</button><button data-page="quiz"><span>✦</span>Quiz</button><button data-page="duas"><span>🤲</span>Duas</button><button data-page="profile"><span>☺</span>Profil</button>
+</nav>
+<script>
+(function(){
+'use strict';
+const $=s=>document.querySelector(s), $$=s=>Array.from(document.querySelectorAll(s));
+const main=$('#main'),nav=$('#nav'),KEY='salatLernen_v3';
+const blank={name:'',avatar:'🧒',stars:0,done:[],quizCorrect:0,quizAnswered:0};
+function read(){try{return {...blank,...JSON.parse(localStorage.getItem(KEY)||'{}')}}catch(e){return {...blank}}}
+let state=read(),page='home',lessonIndex=0,quizIndex=0,quizScore=0,answered=false;
+const lessons=[
+ {title:'Stehen (Qiyam)',emoji:'🧍',desc:'Wir stehen aufrecht und richten unsere Aufmerksamkeit auf Allah.',steps:['Stelle dich aufrecht hin und blicke zum Gebetsplatz.','Fasse die Absicht für dein Gebet im Herzen.','Beginne mit „Allahu akbar“ (Allah ist am größten).','Rezitiere im Stehen, was du gelernt hast.']},
+ {title:'Verbeugung (Ruku)',emoji:'🙇',desc:'Bei Ruku beugen wir uns und loben Allah.',steps:['Beuge dich aus dem Stand nach vorne.','Lege die Hände auf die Knie und halte den Rücken möglichst gerade.','Sprich dreimal: „Subhana rabbiyal-azim“.','Richte dich anschließend wieder auf.']},
+ {title:'Niederwerfung (Sujud)',emoji:'🤲',desc:'Im Sujud gehen wir in die Niederwerfung.',steps:['Gehe kontrolliert in die Niederwerfung.','Stirn und Nase berühren den Boden; Hände, Knie und Zehen sind ebenfalls am Boden.','Sprich: „Subhana rabbiyal-a’la“.','Setze dich kurz auf und wiederhole die Niederwerfung.']},
+ {title:'Sitzen (Jalsa)',emoji:'🧎',desc:'Wir sitzen zwischen Niederwerfungen und zum Abschluss.',steps:['Setze dich ruhig zwischen den Niederwerfungen hin.','Sprich die Bittgebete, die du gelernt hast.','Beim abschließenden Sitzen wird unter anderem At-Tahiyyat rezitiert.','Beende das Gebet mit dem Salam, wie du es gelernt hast.']}
+];
+const duas=[
+ {title:'Beim Beginnen',arabic:'بِسْمِ اللَّهِ',latin:'Bismillah',meaning:'Im Namen Allahs.',note:'Eine Erinnerung, Allah vor einer guten Handlung zu nennen.'},
+ {title:'Lobpreisung in Ruku',arabic:'سُبْحَانَ رَبِّيَ الْعَظِيمِ',latin:'Subhana rabbiyal-azim',meaning:'Gepriesen sei mein Herr, der Gewaltige.',note:'Diese Lobpreisung wird in der Verbeugung gesprochen.'},
+ {title:'Lobpreisung in Sujud',arabic:'سُبْحَانَ رَبِّيَ الْأَعْلَى',latin:'Subhana rabbiyal-a’la',meaning:'Gepriesen sei mein Herr, der Höchste.',note:'Diese Lobpreisung wird in der Niederwerfung gesprochen.'},
+ {title:'Friedensgruß',arabic:'السَّلَامُ عَلَيْكُمْ',latin:'As-salamu alaikum',meaning:'Der Friede sei mit euch.',note:'Der Friedensgruß gehört zum Abschluss des Gebets.'}
+];
+const questions=[
+ {q:'Wie heißt die Verbeugung im Gebet?',a:['Ruku','Sujud','Jalsa'],c:0,why:'Ruku ist die Verbeugung.'},
+ {q:'Wie heißt die Niederwerfung?',a:['Qiyam','Sujud','Salam'],c:1,why:'Sujud ist die Niederwerfung.'},
+ {q:'Was bedeutet „Allahu akbar“?',a:['Der Friede sei mit euch','Gepriesen sei mein Herr','Allah ist am größten'],c:2,why:'„Allahu akbar“ bedeutet: Allah ist am größten.'},
+ {q:'Welche Haltung ist das Stehen?',a:['Qiyam','Ruku','Jalsa'],c:0,why:'Qiyam bezeichnet das Stehen.'},
+ {q:'Welche Lobpreisung wird bei Sujud gesprochen?',a:['Subhana rabbiyal-azim','Subhana rabbiyal-a’la','Bismillah'],c:1,why:'Bei Sujud wird „Subhana rabbiyal-a’la“ gesprochen.'},
+ {q:'Wie heißt das Sitzen im Gebet?',a:['Jalsa','Ruku','Qiyam'],c:0,why:'Jalsa bezeichnet das Sitzen.'}
+];
+function save(){try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){}}
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function go(p){page=p;render()}
+function back(){go('home')}
+function complete(i){if(!state.done.includes(i)){state.done.push(i);state.stars++;save()}}
+function render(){
+ nav.classList.toggle('hidden',!state.name);
+ $$('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.page===page));
+ if(!state.name){setup();return}
+ if(page==='home')home();else if(page==='learn')learn();else if(page==='lesson')lesson();else if(page==='quiz')quiz();else if(page==='duas')duaList();else if(page==='dua')duaDetail();else if(page==='profile')profile();else if(page==='settings')settings();else home();
+}
+function setup(){
+ nav.classList.add('hidden');
+ main.innerHTML=`<section class="hero card"><div class="eyebrow">Willkommen</div><h2>Lerne das Gebet<br>in deinem Tempo.</h2><p>Entdecke die Gebetshaltungen, lerne kurze Bittgebete und sammle Sterne.</p></section><section class="card"><h3>Dein Profil erstellen</h3><p class="muted">Wie dürfen wir dich nennen?</p><form id="setupForm"><label>Dein Name<input id="nameInput" maxlength="30" placeholder="Dein Vorname" required autocomplete="given-name"></label><label>Wähle deinen Begleiter<select id="avatarInput"><option>🧒</option><option>👧</option><option>👦</option><option>🌙</option></select></label><button class="btn full" type="submit">Los geht’s →</button></form></section><p class="notice">Profil und Lernfortschritt werden nur auf diesem Gerät gespeichert. Ein Konto ist nicht nötig.</p>`;
+ $('#setupForm').addEventListener('submit',e=>{e.preventDefault();const n=$('#nameInput').value.trim();if(!n)return;state.name=n;state.avatar=$('#avatarInput').value;save();go('home')});
+}
+function home(){
+ const n=state.done.length;
+ main.innerHTML=`<section class="hero card"><div class="eyebrow">Assalamu alaikum, ${esc(state.name)}!</div><h2>Bereit für einen<br>kleinen Lernschritt?</h2><p>Jede Wiederholung bringt dich weiter. Du schaffst das, Schritt für Schritt.</p><button class="btn" id="start">Weiterlernen →</button></section><div class="row wrap"><div class="stat"><strong>⭐ ${state.stars}</strong><small>Sterne gesammelt</small></div><div class="stat"><strong>${n}/4</strong><small>Haltungen angesehen</small></div><div class="stat"><strong>${state.quizCorrect}</strong><small>Richtige Antworten</small></div></div><section class="card"><div class="row between"><h3>Dein Lernweg</h3><span class="muted">${Math.round(n/4*100)}%</span></div><div class="progress"><span style="width:${n/4*100}%"></span></div><p class="muted">${n===4?'MashaAllah! Du hast alle vier Haltungen besucht.':'Lerne die vier wichtigen Gebetshaltungen kennen.'}</p></section><h3>Was möchtest du machen?</h3><div class="grid"><button class="tile" data-go="learn"><span class="emoji">📖</span><strong>Gebet lernen</strong><small>Die vier Haltungen</small></button><button class="tile" data-go="quiz"><span class="emoji">✨</span><strong>Wissens-Quiz</strong><small>Teste dein Wissen</small></button><button class="tile" data-go="duas"><span class="emoji">🤲</span><strong>Duas & Worte</strong><small>Kurze Gebetstexte</small></button><button class="tile" data-go="settings"><span class="emoji">⚙️</span><strong>Einstellungen</strong><small>Dein Profil verwalten</small></button></div>`;
+ $('#start').addEventListener('click',()=>go('learn'));$$('[data-go]').forEach(b=>b.addEventListener('click',()=>b.dataset.go==='quiz'?startQuiz():go(b.dataset.go)));
+}
+function learn(){
+ main.innerHTML=`<button class="back" data-back>← Zur Übersicht</button><div class="eyebrow">Lernbereich</div><h2>Die Gebetshaltungen</h2><p class="muted">Tippe auf eine Karte, um die Schritte anzusehen.</p><div class="grid">${lessons.map((l,i)=>`<button class="tile" data-lesson="${i}"><span class="emoji">${l.emoji}</span><strong>${l.title}</strong><small>${state.done.includes(i)?'✓ Schon angesehen':'Lektion ansehen'}</small></button>`).join('')}</div><section class="card"><h3>Ein kleiner Tipp</h3><p class="muted">Lerne eine Haltung nach der anderen. Bitte eine vertraute erwachsene Person, dir die Bewegungen zu zeigen und deine Gebetsweise zu erklären.</p></section>`;
+ $('[data-back]').addEventListener('click',back);$$('[data-lesson]').forEach(b=>b.addEventListener('click',()=>{lessonIndex=Number(b.dataset.lesson);go('lesson')}));
+}
+function lesson(){
+ const l=lessons[lessonIndex];if(!l){go('learn');return}
+ main.innerHTML=`<button class="back" id="lessonBack">← Alle Haltungen</button><div class="eyebrow">Lektion ${lessonIndex+1} von 4</div><h2>${l.title}</h2><p class="muted">${l.desc}</p><section class="card"><h3>So geht’s</h3>${l.steps.map((s,i)=>`<div class="step"><span class="num">${i+1}</span><div>${esc(s)}</div></div>`).join('')}</section><div class="row"><button class="btn secondary" id="prev" ${lessonIndex===0?'disabled':''}>← Zurück</button><button class="btn" id="complete">${state.done.includes(lessonIndex)?'Schon geschafft ✓':'Lektion geschafft ⭐'}</button></div>${lessonIndex<3?'<button class="btn ghost full" id="next" style="margin-top:10px">Nächste Haltung →</button>':''}<p class="notice">Die genaue Ausführung kann je nach erlernter Gebetstradition variieren. Lass dir das Gebet von einer vertrauten Person zeigen.</p>`;
+ $('#lessonBack').addEventListener('click',()=>go('learn'));$('#prev').addEventListener('click',()=>{if(lessonIndex>0){lessonIndex--;lesson()}});$('#complete').addEventListener('click',()=>{complete(lessonIndex);lesson()});if($('#next'))$('#next').addEventListener('click',()=>{lessonIndex++;lesson()});
+}
+function startQuiz(){quizIndex=0;quizScore=0;answered=false;go('quiz')}
+function quiz(){
+ if(quizIndex>=questions.length){main.innerHTML=`<section class="hero card"><div class="eyebrow">Quiz beendet</div><h2>Gut gemacht, ${esc(state.name)}!</h2><p>Du hast ${quizScore} von ${questions.length} Fragen richtig beantwortet.</p><div class="stat"><strong>⭐ ${quizScore}</strong><small>Richtige Antworten in dieser Runde</small></div><button class="btn full" id="again" style="margin-top:14px">Noch einmal spielen</button><button class="btn secondary full" id="quizHome" style="margin-top:10px">Zur Startseite</button></section>`;$('#again').addEventListener('click',startQuiz);$('#quizHome').addEventListener('click',back);return}
+ const q=questions[quizIndex];
+ main.innerHTML=`<button class="back" id="quizExit">← Zur Übersicht</button><div class="eyebrow">Wissens-Quiz</div><div class="row between"><h2>Frage ${quizIndex+1}</h2><span>${quizIndex+1} / ${questions.length}</span></div><div class="progress"><span style="width:${quizIndex/questions.length*100}%"></span></div><section class="card"><h3>${q.q}</h3><div id="answers">${q.a.map((a,i)=>`<button class="choice" data-answer="${i}">${esc(a)}</button>`).join('')}</div><div id="feedback"></div><button class="btn full hidden" id="nextQuestion">${quizIndex===questions.length-1?'Ergebnis ansehen':'Nächste Frage →'}</button></section>`;
+ $('#quizExit').addEventListener('click',back);$$('[data-answer]').forEach(b=>b.addEventListener('click',()=>answer(Number(b.dataset.answer))));
+}
+function answer(i){
+ if(answered)return;answered=true;const q=questions[quizIndex],right=i===q.c;
+ if(right){quizScore++;state.quizCorrect++;state.stars++}state.quizAnswered++;save();
+ $$('[data-answer]').forEach(b=>{b.disabled=true;const n=Number(b.dataset.answer);if(n===q.c)b.classList.add('correct');else if(n===i)b.classList.add('wrong')});
+ $('#feedback').innerHTML=`<div class="feedback ${right?'':'bad'}">${right?'Richtig! ⭐':'Fast!'} ${esc(q.why)}</div>`;
+ const next=$('#nextQuestion');next.classList.remove('hidden');next.addEventListener('click',()=>{quizIndex++;answered=false;quiz()});
+}
+function duaList(){
+ main.innerHTML=`<button class="back" data-back>← Zur Übersicht</button><div class="eyebrow">Zum Lernen</div><h2>Duas & Worte</h2><p class="muted">Kurze Texte mit Lautschrift und Bedeutung.</p>${duas.map((d,i)=>`<button class="tile full" style="width:100%;min-height:0;margin:6px 0" data-dua="${i}"><div class="row between"><strong>${d.title}</strong><span>→</span></div><small>${d.latin}</small></button>`).join('')}<p class="notice">Die Lautschrift ist eine Lernhilfe und ersetzt nicht das Hören und Üben der arabischen Aussprache.</p>`;
+ $('[data-back]').addEventListener('click',back);$$('[data-dua]').forEach(b=>b.addEventListener('click',()=>{lessonIndex=Number(b.dataset.dua);go('dua')}));
+}
+function duaDetail(){
+ const d=duas[lessonIndex];if(!d){go('duas');return}
+ main.innerHTML=`<button class="back" id="duaBack">← Alle Duas</button><div class="eyebrow">Dua & Bedeutung</div><section class="card"><h2 style="text-align:center">${d.title}</h2><div class="arabic" lang="ar" dir="rtl">${d.arabic}</div><hr><h3 style="text-align:center">${d.latin}</h3><p style="text-align:center">${d.meaning}</p><p class="muted" style="text-align:center">${d.note}</p><button class="btn full" id="speak">🔊 Laut vorlesen</button><p class="notice">Die Vorlesefunktion verwendet, sofern verfügbar, die Sprachausgabe deines Geräts.</p></section>`;
+ $('#duaBack').addEventListener('click',()=>go('duas'));$('#speak').addEventListener('click',()=>{if(!('speechSynthesis'in window)){alert('Die Sprachausgabe ist auf diesem Gerät nicht verfügbar.');return}speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(d.latin+'. '+d.meaning);u.lang='de-DE';speechSynthesis.speak(u)});
+}
+function profile(){
+ main.innerHTML=`<button class="back" data-back>← Zur Übersicht</button><div class="eyebrow">Dein Bereich</div><h2>Dein Profil</h2><section class="card"><div class="row"><div class="avatar" style="display:grid;place-items:center;width:62px;height:62px">${esc(state.avatar)}</div><div><h3>${esc(state.name)}</h3><p class="muted">Dein persönlicher Lernweg</p></div></div><hr><div class="row wrap"><div class="stat"><strong>⭐ ${state.stars}</strong><small>Sterne</small></div><div class="stat"><strong>${state.done.length}/4</strong><small>Haltungen</small></div><div class="stat"><strong>${state.quizAnswered}</strong><small>Quizfragen</small></div></div><button class="btn full" id="edit" style="margin-top:16px">Profil bearbeiten</button></section><button class="tile full" data-go="settings" style="width:100%"><span class="emoji">⚙️</span><strong>Einstellungen</strong><small>Fortschritt und Daten verwalten</small></button>`;
+ $('[data-back]').addEventListener('click',back);$('[data-go]').addEventListener('click',()=>go('settings'));$('#edit').addEventListener('click',editProfile);
+}
+function editProfile(){
+ main.innerHTML=`<button class="back" id="cancel">← Zurück</button><section class="card"><h2>Profil bearbeiten</h2><form id="editForm"><label>Name<input id="editName" maxlength="30" required value="${esc(state.name)}"></label><label>Begleiter<select id="editAvatar"><option>🧒</option><option>👧</option><option>👦</option><option>🌙</option></select></label><button class="btn full" type="submit">Speichern</button></form></section>`;
+ $('#editAvatar').value=state.avatar;$('#cancel').addEventListener('click',()=>go('profile'));$('#editForm').addEventListener('submit',e=>{e.preventDefault();state.name=$('#editName').value.trim()||state.name;state.avatar=$('#editAvatar').value;save();go('profile')});
+}
+function settings(){
+ main.innerHTML=`<button class="back" data-back>← Profil</button><div class="eyebrow">Persönlich</div><h2>Einstellungen</h2><section class="card"><h3>Lernfortschritt zurücksetzen</h3><p class="muted">Löscht Sterne, abgeschlossene Lektionen und Quizstatistik. Dein Profil bleibt erhalten.</p><button class="btn ghost full" id="resetProgress">Fortschritt zurücksetzen</button><hr><h3>Alle Daten löschen</h3><p class="muted">Entfernt auch dein Profil von diesem Gerät.</p><button class="btn full" id="resetAll">App-Profil komplett zurücksetzen</button></section>`;
+ $('[data-back]').addEventListener('click',()=>go('profile'));$('#resetProgress').addEventListener('click',()=>{if(confirm('Lernfortschritt wirklich zurücksetzen?')){state.stars=0;state.done=[];state.quizCorrect=0;state.quizAnswered=0;save();settings()}});$('#resetAll').addEventListener('click',()=>{if(confirm('Profil und alle lokalen Lerndaten löschen?')){state={...blank};save();go('home')}});
+}
+nav.addEventListener('click',e=>{const b=e.target.closest('button[data-page]');if(!b)return;if(b.dataset.page==='quiz')startQuiz();else go(b.dataset.page)});
+$('#profileShortcut').addEventListener('click',()=>state.name?go('profile'):setup());
+render();
+})();
+</script>
+</body>
+</html>

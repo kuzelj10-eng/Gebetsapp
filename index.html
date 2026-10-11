@@ -132,7 +132,41 @@ function nextLesson(){state.done[lessonIndex]=true;save();if(lessonIndex<3){less
 function speakCurrent(){speak(LESSONS[lessonIndex].speak)}
 function speak(t){if(!('speechSynthesis' in window)){toast('Audio wird von diesem Browser nicht unterstützt.');return}speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang=state.lang==='ar'?'ar-SA':state.lang==='bs'?'bs-BA':state.lang==='en'?'en-US':'de-DE';u.rate=.82;speechSynthesis.speak(u)}
 function startQuiz(){quizIndex=0;score=0;renderQuiz();show('quiz')}
-function renderQuiz(){if(quizIndex>=QUIZ.length){state.quizDone=Math.max(state.quizDone,score);save();document.getElementById('quizBox').innerHTML='<div class="result"><div class="star">🏆</div><h2>Quiz geschafft!</h2><p class="muted">Du hast '+score+' von '+QUIZ.length+' Fragen richtig beantwortet.</p><button class="btn primary wide" onclick="show(\\'home\\')">Zur Startseite</button></div>';return}const q=QUIZ[quizIndex];document.getElementById('quizBox').innerHTML='<div class="eyebrow">FRAGE '+(quizIndex+1)+' / '+QUIZ.length+'</div><h2 style="font:28px Georgia,serif">'+q.q+'</h2>'+q.a.map((a,i)=>'<button class="answer" onclick="answer('+i+')">'+a+'</button>').join('')}
+function renderQuiz() {
+  if (quizIndex >= QUIZ.length) {
+    state.quizDone = Math.max(state.quizDone, score);
+    save();
+
+    document.getElementById('quizBox').innerHTML = `
+      <div class="result">
+        <div class="star">🏆</div>
+        <h2>Quiz geschafft!</h2>
+        <p class="muted">
+          Du hast ${score} von ${QUIZ.length}
+          Fragen richtig beantwortet.
+        </p>
+        <button class="btn primary wide"
+          onclick="show('home')">
+          Zur Startseite
+        </button>
+      </div>
+    `;
+    return;
+  }
+
+  const q = QUIZ[quizIndex];
+
+  document.getElementById('quizBox').innerHTML =
+    '<div class="eyebrow">FRAGE ' +
+    (quizIndex + 1) + ' / ' + QUIZ.length +
+    '</div><h2 style="font:28px Georgia,serif">' +
+    q.q + '</h2>' +
+    q.a.map((a, i) =>
+      '<button class="answer" onclick="answer(' +
+      i + ')">' + a + '</button>'
+    ).join('');
+}
+
 function answer(i){const q=QUIZ[quizIndex],buttons=[...document.querySelectorAll('.answer')];buttons.forEach((b,j)=>{b.disabled=true;if(j===q.c)b.classList.add('correct');if(j===i&&i!==q.c)b.classList.add('wrong')});if(i===q.c){score++;toast('✓ Richtig!')}else toast('Noch einmal üben 💚');setTimeout(()=>{quizIndex++;renderQuiz()},700)}
 function renderTimes(){const data=[['Fajr','05:42','🌅'],['Dhuhr','12:56','☀️'],['Asr','16:45','🌤️'],['Maghrib','19:12','🌙'],['Isha','20:39','🌌']];document.getElementById('timesList').innerHTML=data.map(x=>'<div class="setting" style="margin-top:9px"><b>'+x[2]+' '+x[0]+'</b><strong>'+x[1]+'</strong></div>').join('')}
 function renderRewards(){const n=state.done.filter(Boolean).length;const b=[['🌱','Erster Schritt',n>=1],['⭐','Vier Positionen',n>=4],['🏆','Quiz-Meister',state.quizDone>=4],['🔥','Lernserie',state.streak>=3],['📖','Suren entdeckt',false],['🌙','Sieben Tage',state.streak>=7]];document.getElementById('badges').innerHTML=b.map(x=>'<div class="badge '+(x[2]?'':'locked')+'"><div class="ico">'+x[0]+'</div><b>'+x[1]+'</b></div>').join('');let pct=Math.min(100,n/4*100);document.getElementById('rewardFill').style.width=pct+'%';document.getElementById('nextGoal').textContent=n<4?'Noch '+(4-n)+' Position(en) lernen, um das nächste Abzeichen freizuschalten.':'Alle vier Positionen geschafft!'}
